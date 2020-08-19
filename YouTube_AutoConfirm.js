@@ -5,6 +5,7 @@
 // @description  Auto-Clicks on "Yes" when asked "Video paused. Continue watching?"
 // @author       RustyPrimeLUX
 // @match        https://www.youtube.com/watch?v=*
+// @updateURL    https://raw.githubusercontent.com/RustyPrime/UserScripts/master/YouTube_AutoConfirm.js
 // @grant        none
 // ==/UserScript==
 
