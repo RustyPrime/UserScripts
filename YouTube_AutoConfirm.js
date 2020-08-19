@@ -10,7 +10,7 @@
 
 (function() {
     var checkDelay = 2000; // checks every 2 seconds if the pop-up has appeared
-
+    var test;
     'use strict';
     setInterval(function(){
         var popUp = document.querySelector("yt-confirm-dialog-renderer");
