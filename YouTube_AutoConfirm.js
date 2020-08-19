@@ -10,11 +10,11 @@
 
 (function() {
     var checkDelay = 2000; // checks every 2 seconds if the pop-up has appeared
-    var test;
+
     'use strict';
     setInterval(function(){
         var popUp = document.querySelector("yt-confirm-dialog-renderer");
-        if(popUp !== undefined){
+        if(popUp !== undefined && popUp !== null){
             var button = popUp.querySelector("paper-button#button yt-formatted-string#text");
             if(button.textContent === "Yes"){
                 console.log("clicking on yes");
