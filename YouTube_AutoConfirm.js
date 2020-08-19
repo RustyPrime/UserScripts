@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         YouTube_AutoConfirm
 // @namespace    https://waryor.com/
-// @version      0.1.1
+// @version      0.1.2
 // @description  Auto-Clicks on "Yes" when asked "Video paused. Continue watching?"
 // @author       RustyPrimeLUX
 // @match        https://www.youtube.com/watch?v=*
+// @downloadURL  https://raw.githubusercontent.com/RustyPrime/UserScripts/master/YouTube_AutoConfirm.js
 // @updateURL    https://raw.githubusercontent.com/RustyPrime/UserScripts/master/YouTube_AutoConfirm.js
 // @grant        none
 // ==/UserScript==
