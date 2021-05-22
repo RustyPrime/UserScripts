@@ -15,10 +15,9 @@
     var debug = false;
     setInterval(function(){
         if(debug)console.log("checking");
-        var item = document.querySelector(".community-points-summary .tw-full-height");
-        var button = item.querySelector("button");
-        if(button != undefined){
-             button.click();
+        var item = document.querySelector(".claimable-bonus__icon");
+        if(item != undefined){
+             item.click();
         }
         if(debug)console.log(item);
     }, 10000);
