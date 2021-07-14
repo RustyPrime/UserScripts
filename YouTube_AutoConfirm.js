@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         YouTube_AutoConfirm
+// @name         YouTube Auto Confirm
 // @namespace    https://waryor.com/
 // @version      0.1.3
 // @description  Auto-Clicks on "Yes" when asked "Video paused. Continue watching?"
