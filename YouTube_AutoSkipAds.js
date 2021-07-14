@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         YouTube_AutoSkipAds
+// @name         YouTube Auto Skip Ads
 // @namespace    https://waryor.com/
 // @version      0.1
 // @description  autoclicks on youtube's skip ad buttons once they appear
