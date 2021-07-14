@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Twitch_AutoCollectPoints
+// @name         Twitch Auto Collect Points
 // @namespace    https://waryor.com
 // @version      0.1
 // @description  Automaticly collects twitch points when watching a streamer
