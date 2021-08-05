@@ -5,8 +5,6 @@
 // @description  Auto-Clicks on "Yes" when asked "Video paused. Continue watching?"
 // @author       RustyPrimeLUX
 // @match        https://www.youtube.com/watch?v=*
-// @downloadURL  https://raw.githubusercontent.com/RustyPrime/UserScripts/master/YouTube_AutoConfirm.js
-// @updateURL    https://raw.githubusercontent.com/RustyPrime/UserScripts/master/YouTube_AutoConfirm.js
 // @grant        none
 // ==/UserScript==
 
@@ -18,7 +16,7 @@
     'use strict';
     setInterval(function(){
         if(popUp === null){
-            popUp = document.querySelector("paper-dialog.ytd-popup-container");
+            popUp = document.querySelector("yt-button-renderer#confirm-button");
         }
         if(popUp !== undefined){
             if(popUp !== null){
@@ -35,11 +33,7 @@
     }, checkDelay);
 
     function FindAndClickButton(popUp){
-        var button = popUp.querySelector("paper-button#button yt-formatted-string#text");
-        if(button.textContent === "Yes"){
-            console.log("clicking on yes");
-            button.click();
-        }
+        var button = popUp.querySelector("a");
+        if(button !== undefined) button.click();
     }
 })();
-
