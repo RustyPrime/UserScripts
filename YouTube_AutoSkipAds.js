@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         YouTube_AutoSkipAds
+// @name         YouTube Auto Skip Ads
 // @namespace    none
 // @version      0.2
 // @description  autoclicks on youtube's skip ad buttons once they appear, also auto-closes banner ads
