@@ -1,0 +1,29 @@
+// ==UserScript==
+// @name         Amazon UK - Keep Marketplace away from me
+// @version      v0.1
+// @namespace    none
+// @description  Changes the amazon background to red when viewing a marketplace item
+// @author       RustyPrimeLUX
+// @match        https://www.amazon.co.uk/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=amazon.co.uk
+// @downloadURL  https://raw.githubusercontent.com/RustyPrime/UserScripts/master/AmazonCOUK_KeepMarketplaceAway.js
+// @updateURL    https://raw.githubusercontent.com/RustyPrime/UserScripts/master/AmazonCOUK_KeepMarketplaceAway.js
+// @license      MIT
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    setInterval(()=>{
+        var page = document.querySelector("#a-page");
+        var sellerDiv = document.querySelector('.offer-display-feature-text[offer-display-feature-name="desktop-fulfiller-info"] span');
+        if (sellerDiv != null && sellerDiv.textContent != "Amazon"){
+            sellerDiv.style.backgroundColor = "red";
+            page.style.backgroundColor = "red";
+        }
+        else{
+            page.style.backgroundColor = "white";
+            sellerDiv.style.backgroundColor = "inherit";
+        }
+    }, 2000);
+})();
