@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         Amazon - Keep Marketplace away from me
+// @name         Amazon DE - Keep Marketplace away from me
 // @version      v0.1
 // @namespace    none
 // @description  Changes the amazon background to red when viewing a marketplace item
 // @author       RustyPrimeLUX
 // @match        https://www.amazon.de/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=amazon.de
-// @downloadURL  https://raw.githubusercontent.com/RustyPrime/UserScripts/master/Amazon_KeepMarketplaceAway.js
-// @updateURL    https://raw.githubusercontent.com/RustyPrime/UserScripts/master/Amazon_KeepMarketplaceAway.js
+// @downloadURL  https://raw.githubusercontent.com/RustyPrime/UserScripts/master/AmazonDE_KeepMarketplaceAway.js
+// @updateURL    https://raw.githubusercontent.com/RustyPrime/UserScripts/master/AmazonDE_KeepMarketplaceAway.js
 // @license      MIT
 // @grant        none
 // ==/UserScript==
