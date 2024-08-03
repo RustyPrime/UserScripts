@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Auto Skip Ads
 // @namespace    none
-// @version      0.4
+// @version      0.5
 // @description  autoclicks on youtube's skip ad buttons once they appear, also auto-closes banner ads
 // @author       RustyPrimeLUX
 // @match        https://www.youtube.com/*
@@ -33,7 +33,12 @@
         else{
             if(debug) console.log("found no banner ads: skipBannerBtn=" + closeBannerBtn);
         }
-    }, 2000);
+
+	var errorScreen = document.querySelector("#error-screen");
+        if (errorScreen != null && isVisible(errorScreen)){
+            window.location.reload();
+        }
+    }, 1000);
 
     function isVisible(el) {
         return (el.offsetParent !== null)
