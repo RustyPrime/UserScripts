@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Auto Skip Ads
 // @namespace    none
-// @version      0.6
+// @version      0.7
 // @description  autoclicks on youtube's skip ad buttons once they appear, also auto-closes banner ads
 // @author       RustyPrimeLUX
 // @match        https://www.youtube.com/*
@@ -16,7 +16,7 @@
     var currentVideoTime = 0;
 
     var videoPlayer = document.querySelector(".video-stream.html5-main-video");
-    var skipAdBtn = document.querySelector("div.ytp-ad-text.ytp-ad-skip-button-text") || document.querySelector(".ytp-skip-ad-button");
+    var skipAdBtn = document.querySelector("div.ytp-ad-text.ytp-ad-skip-button-text") || document.querySelector(".ytp-skip-ad-button") || document.querySelector(".ytp-skip-ad-button__text");
     var closeBannerBtn = document.querySelector("button.ytp-ad-overlay-close-button");
     var errorScreen = document.querySelector("#error-screen");
 
@@ -65,7 +65,7 @@
 
     function getSkipAdsButton() {
         if (skipAdBtn == null){
-            skipAdBtn = document.querySelector("div.ytp-ad-text.ytp-ad-skip-button-text") || document.querySelector(".ytp-skip-ad-button");
+            skipAdBtn = document.querySelector("div.ytp-ad-text.ytp-ad-skip-button-text") || document.querySelector(".ytp-skip-ad-button") || document.querySelector(".ytp-skip-ad-button__text");
         }
         return skipAdBtn != null;
     }
