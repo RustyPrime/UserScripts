@@ -1,20 +1,21 @@
 // ==UserScript==
 // @name         YouTube Auto Confirm
-// @version      0.2
+// @version      0.3
 // @description  Auto-Clicks on "Yes" when asked "Video paused. Continue watching?"
 // @author       RustyPrimeLUX
-// @match        https://www.youtube.com/watch?v=*
-// @grant        none
+// @match        https://www.youtube.com/*
 // @license      MIT
+// @namespace    none
+// @grant        none
 // @downloadURL  https://update.greasyfork.org/scripts/409090/YouTube%20Auto%20Confirm.user.js
 // @updateURL    https://update.greasyfork.org/scripts/409090/YouTube%20Auto%20Confirm.meta.js
 // ==/UserScript==
 
 (function() {
-    var checkDelay = 2000; // checks every 2 seconds if the pop-up has appeared
-
-    var popUp = null;
     'use strict';
+    var checkDelay = 2000; // checks every 2 seconds if the pop-up has appeared
+    var popUp = null;
+    
     setInterval(function(){
         if(popUp == null){
             popUp = document.querySelector("#confirm-button");
